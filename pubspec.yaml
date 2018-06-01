@@ -27,8 +27,27 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-   - images/a_dot_burr.jpeg
-   - images/a_dot_ham.jpeg
+   - images/fordark_logo.png
+   - images/logo_for_white_3.svg
+   - images/logo_for_white.svg
+  #  - images/logo_v.svg
+   - images/logo.svg
+   #maps
+   - images/yarilabs-contact-us-uk.jpg
+   - images/yarilabs-contact-us.png
+   #tech_logos
+   - images/tech/androidsdk.png
+   - images/tech/angular2.jpg
+   - images/tech/clojure.png
+   - images/tech/elixir.png
+   - images/tech/elm.png
+   - images/tech/erlang.jpg
+   - images/tech/es6.png
+   - images/tech/ionic.png
+   - images/tech/phoenix.png
+   - images/tech/ruby.png
+   - images/tech/rubyonrails.png
+   - images/tech/typescript.jpg
 
   
   # To add custom fonts to your application, add a fonts section here,
