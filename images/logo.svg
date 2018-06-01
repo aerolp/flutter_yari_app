@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="118px" viewBox="0 0 117 118" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-5" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="brand-variations" sketch:type="MSLayerGroup" transform="translate(-453.000000, -266.000000)">
+            <g id="Group-207" sketch:type="MSShapeGroup">
+                <g id="Logo" transform="translate(453.000000, 266.000000)">
+                    <path d="M0,118 L117,118 L117,0 L0,0 L0,118 Z" id="Fill-156" fill="#222222"></path>
+                    <path d="M47.4473,28.0723 L55.2413,28.0723 L51.3343,34.8313 L47.4473,41.5853 L43.5413,34.8313 L39.6553,28.0723 L47.4473,28.0723 Z" id="Fill-202" fill="#FFFFFF"></path>
+                    <path d="M33.2207,83.3057 L43.0797,66.2607 L24.9907,34.8307 L33.7037,34.8307 L47.4477,58.6227 L61.1917,34.8307 L69.9007,34.8307 L51.4787,66.8397 L51.3827,66.9827 L41.9967,83.3057 L33.2207,83.3057 Z" id="Fill-203" fill="#FFCC00"></path>
+                    <path d="M61.1953,75.707 L79.9173,75.707 L70.5503,59.509 L61.1953,75.707 Z M48.0993,83.306 L66.5173,51.29 L66.6153,51.149 L76.0023,34.831 L84.7763,34.831 L74.9143,51.868 L93.0013,83.306 L48.0993,83.306 Z" id="Fill-204" fill="#FFFFFF"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
