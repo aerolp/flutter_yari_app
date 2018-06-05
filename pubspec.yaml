@@ -41,11 +41,13 @@ flutter:
    - images/tech/clojure.png
    - images/tech/elixir.png
    - images/tech/elm.png
+   - images/tech/elm2.png
    - images/tech/erlang.jpg
    - images/tech/es6.png
    - images/tech/ionic.png
    - images/tech/phoenix.png
    - images/tech/ruby.png
+   - images/tech/ruby_logo.png
    - images/tech/rubyonrails.png
    - images/tech/typescript.jpg
 
