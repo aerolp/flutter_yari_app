@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'appbar.dart';
 import 'contact.dart';
+import 'software.dart';
+import 'about_company.dart';
 
 class UnitConverterApp extends StatelessWidget{
   @override
@@ -37,7 +39,7 @@ class _YariAppState extends State<YariApp>{
     final TextStyle dialogTextStyle = theme.textTheme.subhead.copyWith(color: theme.textTheme.caption.color);
 
     return Scaffold(
-      appBar: TopBar().topbar,
+      appBar: TopBar(context).topbar,
       // drawer: TopBar().drawerer,
       drawer: new Drawer(
         child: new ListView(
@@ -52,9 +54,15 @@ class _YariAppState extends State<YariApp>{
             ),
             new ListTile(title: new Text('Company (4slots)'), 
                         trailing: new Icon(Icons.arrow_forward),
+                        onTap: () => Navigator.of(context).push(
+                          new MaterialPageRoute(builder: (BuildContext context)
+                          =>new Software())),
                         ),
             new ListTile(title: new Text('Softwares'), 
                         trailing: new Icon(Icons.arrow_forward),
+                        onTap: () => Navigator.of(context).push(
+                          new MaterialPageRoute(builder: (BuildContext context)
+                          =>new Company())),
                         ),
             new ListTile(title: new Text('Contact'), 
                         trailing: new Icon(Icons.arrow_forward),
