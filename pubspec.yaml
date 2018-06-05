@@ -26,16 +26,33 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
-  #  - images/a_dot_burr.jpeg
-  #  - images/a_dot_ham.jpeg
+  assets:
+   - images/fordark_logo.png
+   - images/logo_for_white_3.png
+   - images/logo_for_white.png
+   - images/logo_y.png
+   - images/logo_y_w.png
+   - images/logo.png
+   #maps
+   - images/yarilabs-contact-us-uk.jpg
+   - images/yarilabs-contact-us.png
+   #tech_logos
+   - images/tech/androidsdk.png
+   - images/tech/angular2.jpg
+   - images/tech/clojure.png
+   - images/tech/elixir.png
+   - images/tech/elm.png
+   - images/tech/elm2.png
+   - images/tech/erlang.jpg
+   - images/tech/es6.png
+   - images/tech/ionic.png
+   - images/tech/phoenix.png
+   - images/tech/ruby.png
+   - images/tech/ruby_logo.png
+   - images/tech/rubyonrails.png
+   - images/tech/typescript.jpg
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.io/assets-and-images/#resolution-aware.
-
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.io/assets-and-images/#from-packages
-
+  
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
