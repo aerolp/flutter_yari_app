@@ -28,10 +28,11 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
    - images/fordark_logo.png
-   - images/logo_for_white_3.svg
-   - images/logo_for_white.svg
-  #  - images/logo_v.svg
-   - images/logo.svg
+   - images/logo_for_white_3.png
+   - images/logo_for_white.png
+   - images/logo_y.png
+   - images/logo_y_w.png
+   - images/logo.png
    #maps
    - images/yarilabs-contact-us-uk.jpg
    - images/yarilabs-contact-us.png
