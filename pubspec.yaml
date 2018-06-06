@@ -41,6 +41,7 @@ flutter:
    - images/cogs.png
    #maps
    - images/yarilabs-contact-us-uk.jpg
+   - images/yarilabs-contact-us-uk_s.jpg
    - images/yarilabs-contact-us.png
    #tech_logos
    - images/tech/androidsdk.png

@@ -14,41 +14,58 @@ class Contact extends StatelessWidget{
             ),
             // onPressed: () => launch('https://www.google.com/maps/search/?api=1&query=centurylink+field'),
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                'Rua dos Capelistas, 30 - 3rd Floor',
-                style: Theme.of(context).textTheme.subhead )
-            ),
+          //Street
+          new RaisedButton(
+            color: Colors.white,
+            padding: const EdgeInsets.all(22.0),
+            
+            child: Text('Rua dos Capelistas, 30 - 3rd Floor', 
+              style: Theme.of(context).textTheme.subhead),
+            onPressed: () => launch('https://www.google.com/maps/search/?api=1&query=yarilabs')
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                '4700-307 - Braga',
-                style: Theme.of(context).textTheme.body1)
-            ),
+          //Postal-code
+          new RaisedButton(
+            color: Colors.white,
+            padding: const EdgeInsets.all(22.0),
+            
+            child: Text('4700-307 - Braga',
+                style: Theme.of(context).textTheme.body1),
+            onPressed: () {new AlertDialog(
+              title: new Text('Rewind and remember'),
+              content: new SingleChildScrollView(
+                child: new ListBody(
+                  children: <Widget>[
+                    new Text('You will never be satisfied.'),
+                    new Text('You\’re like me. I’m never satisfied.'),
+                  ],
+                ),
+              ),
+              actions: <Widget>[
+                new FlatButton(
+                  child: new Text('Regret'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            );}
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                'Portugal',
-                style: Theme.of(context).textTheme.body1)
-            ),
-          ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              leading: new Icon(Icons.phone, color: Colors.grey[600]),
-              title: new Text(
-                '+351 253776740',
-                style: new TextStyle(
-                  color: Colors.grey[600],
-                  fontSize: 14.0)
+          //Call btn
+          new RaisedButton(
+            color: Colors.white,            
+            child: new Center(
+              child: new ListTile(
+                leading: new Icon(Icons.phone, color: Colors.grey[600]),
+                title: new Text(
+                  '+351 253776740',
+                  style: new TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 14.0
+                  )
                 )
+              ),
             ),
+            onPressed: () {}
           ),
         ],
       ),
@@ -58,50 +75,62 @@ class Contact extends StatelessWidget{
         children: <Widget>[
           new Container(
             child: new Image.asset(
-              'images/yarilabs-contact-us-uk.jpg',
+              'images/yarilabs-contact-us-uk_s.jpg',
             ),
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                '86-90 Paul Street, 3rd Floor',
-                style: Theme.of(context).textTheme.subhead )
-            ),
+          //Street
+          new RaisedButton(
+            color: Colors.white,
+            padding: const EdgeInsets.all(22.0),
+            
+            child: Text('86-90 Paul Street, 3rd Floor', 
+              style: Theme.of(context).textTheme.subhead),
+            onPressed: () => launch('https://www.google.com/maps/search/?api=1&query=Paul+Street')
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                'EC2A 4NE - London',
-                style: Theme.of(context).textTheme.body1)
-            ),
+          //Postal-code
+          new RaisedButton(
+            color: Colors.white,
+            padding: const EdgeInsets.all(22.0),
+            
+            child: Text('EC2A 4NE - London',
+                style: Theme.of(context).textTheme.body1),
+            onPressed: () {new AlertDialog(
+              title: new Text('Rewind and remember'),
+              content: new SingleChildScrollView(
+                child: new ListBody(
+                  children: <Widget>[
+                    new Text('You will never be satisfied.'),
+                    new Text('You\’re like me. I’m never satisfied.'),
+                  ],
+                ),
+              ),
+              actions: <Widget>[
+                new FlatButton(
+                  child: new Text('Regret'),
+                  onPressed: () {
+                    Navigator.of(context).pop();
+                  },
+                ),
+              ],
+            );}
           ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              title: new Text(
-                'United Kingdom',
-                style: Theme.of(context).textTheme.body1)
-            ),
-          ),
-          // new FlatButton(
-          //     onPressed: () => launch('tel://932321483'),
-          //     child: new Text('Call me c='),
-          // ),
-          new Container(
-            // padding: new EdgeInsets.only(top:10.0),
-            child: new ListTile(
-              leading: new Icon(Icons.phone, color: Colors.grey[600]),
-              title: new Text(
-                '+44 7445007797',
-                style: new TextStyle(
-                  color: Colors.grey[600],
-                  fontSize: 14.0)
+          //Call btn
+          new RaisedButton(
+            color: Colors.white,            
+            child: new Center(
+              child: new ListTile(
+                leading: new Icon(Icons.phone, color: Colors.grey[600]),
+                title: new Text(
+                  '+44 7445007797',
+                  style: new TextStyle(
+                    color: Colors.grey[600],
+                    fontSize: 14.0
+                  )
                 )
+              ),
             ),
-          ),
-          
+            onPressed: () {}
+          ),          
         ],
       ),
     );
@@ -112,7 +141,7 @@ class Contact extends StatelessWidget{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://gitlab.com/yarilabs')
     );
     final _icon2 = IconButton(
       icon: new ImageIcon(
@@ -120,7 +149,7 @@ class Contact extends StatelessWidget{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://twitter.com/yarilabs'),
     );
     final _icon3 = IconButton(
       icon: new ImageIcon(
@@ -128,7 +157,7 @@ class Contact extends StatelessWidget{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://plus.google.com/111792819110493287001/about'),
     );
     final _icon4 = IconButton(
       icon: new ImageIcon(
@@ -136,7 +165,7 @@ class Contact extends StatelessWidget{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://www.linkedin.com/company/11137193'),
     );
 
     return new DefaultTabController(
@@ -177,3 +206,12 @@ class Contact extends StatelessWidget{
     
   }
 }
+
+
+
+
+
+          // new FlatButton(
+          //     onPressed: () => launch('tel://932321483'),
+          //     child: new Text('Call me c='),
+          // ),

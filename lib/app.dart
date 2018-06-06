@@ -66,7 +66,7 @@ class _YariAppState extends State<YariApp>{
         ],
       ),
     );
-    final _consulting = new RaisedButton(
+    final _consultingBtn = new RaisedButton(
       color: Colors.black87,
       padding: const EdgeInsets.all(22.0),
       
@@ -88,7 +88,7 @@ class _YariAppState extends State<YariApp>{
         });
       }
     );
-    final _product = new RaisedButton(
+    final _productBtn = new RaisedButton(
       color: Colors.black87,
       padding: const EdgeInsets.all(22.0),
       child: Text('Product Development', style: new TextStyle(color: Colors.white),),
@@ -109,7 +109,7 @@ class _YariAppState extends State<YariApp>{
         });
       }
     );
-    final _training = new RaisedButton(
+    final _trainingBtn = new RaisedButton(
       color: Colors.black87,
       padding: const EdgeInsets.all(22.0),
       child: Text('Training', style: new TextStyle(color: Colors.white),),
@@ -130,7 +130,7 @@ class _YariAppState extends State<YariApp>{
         });
       }
     );
-    final _devops = new RaisedButton(
+    final _devopsBtn = new RaisedButton(
       color: Colors.black87,
       padding: const EdgeInsets.all(22.0),
       child: Text('Devops and System adminstration', style: new TextStyle(color: Colors.white),),
@@ -151,7 +151,7 @@ class _YariAppState extends State<YariApp>{
         });
       }
     );
-    final _elixir = new Expanded(
+    final _elixirBtn = new Expanded(
       child: (
         new FlatButton(
           child: new IconTheme(
@@ -177,7 +177,7 @@ class _YariAppState extends State<YariApp>{
         )
       ),
     );
-    final _elm = new Expanded(
+    final _elmBtn = new Expanded(
       child: (
         new FlatButton(
           child: new IconTheme(
@@ -203,7 +203,7 @@ class _YariAppState extends State<YariApp>{
         )
       ),
     );
-    final _ruby = new Expanded(
+    final _rubyBtn = new Expanded(
       child: (
         new FlatButton(
           child: new IconTheme(
@@ -229,6 +229,15 @@ class _YariAppState extends State<YariApp>{
         )
       ),
     );
+    final _moreTechBtn = new RaisedButton.icon(
+      color: Colors.black87,
+      icon: Icon(Icons.more, color: Colors.white,),
+      label: Text('More technology', style: new TextStyle(color: Colors.white)),
+      splashColor: Colors.black45,
+      onPressed: () => Navigator.of(context).push(
+                        new MaterialPageRoute(builder: (BuildContext context)
+                        =>new Company())),
+      );
     final _body = new Container(  
       color: Colors.grey[100],      
       child: new Stack(
@@ -242,10 +251,10 @@ class _YariAppState extends State<YariApp>{
               ),
               new ListTile(title: new Text(_beginningText)),
               new Container(padding: new EdgeInsets.all(10.0),),
-              _consulting,
-              _product,
-              _training,
-              _devops,
+              _consultingBtn,
+              _productBtn,
+              _trainingBtn,
+              _devopsBtn,
               new Container(padding: new EdgeInsets.all(10.0),),
               new ListTile(title: new Text(_ourTech, 
                   style: Theme.of(context).textTheme.body2 ,),
@@ -253,12 +262,13 @@ class _YariAppState extends State<YariApp>{
               new Container(padding: new EdgeInsets.all(10.0),),
               new Row(
                 children: <Widget>[
-                  _elixir,
-                  _elm,
-                  _ruby,
+                  _elixirBtn,
+                  _elmBtn,
+                  _rubyBtn,
                 ],
               ),
               new Container(padding: new EdgeInsets.all(10.0),),
+              _moreTechBtn,
             ],
           ),
 
@@ -272,7 +282,7 @@ class _YariAppState extends State<YariApp>{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://gitlab.com/yarilabs')
     );
     final _icon2 = IconButton(
       icon: new ImageIcon(
@@ -280,7 +290,7 @@ class _YariAppState extends State<YariApp>{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://twitter.com/yarilabs'),
     );
     final _icon3 = IconButton(
       icon: new ImageIcon(
@@ -288,7 +298,7 @@ class _YariAppState extends State<YariApp>{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://plus.google.com/111792819110493287001/about'),
     );
     final _icon4 = IconButton(
       icon: new ImageIcon(
@@ -296,7 +306,7 @@ class _YariAppState extends State<YariApp>{
         size:36.0, 
         color: Colors.yellow[600]
       ),
-      onPressed: () {},
+      onPressed: () => launch('https://www.linkedin.com/company/11137193'),
     );
 
     return Scaffold(
