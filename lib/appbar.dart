@@ -1,28 +1,38 @@
 import 'package:flutter/material.dart';
+
 import 'appbar.dart';
 import 'contact.dart';
 import 'software.dart';
 import 'about_company.dart';
 
+//Alert Dialog options
+enum DialogDemoAction {
+  cancel,
+  ok,
+}
 
+//Where all Variables are situated
 class TopBar{
   final BuildContext context;
   TopBar(this.context);
   
+  //Main Top bar
   final topbar = AppBar(
     backgroundColor: Color(0xFFFFA000),
     title: new Text('Yarilabs')
   );
+  //Secondary Top bar
   final topbartabs = AppBar(
     backgroundColor: Color(0xFFFFA000),
     title: new Text('Yarilabs'),
     bottom: new TabBar(
       tabs: [
-        new Tab(text: 'Portugal'),
-        new Tab(text: 'Ingland'),
+        new Container(child: new Tab(text: 'Portugal')),
+        new Tab(text: 'United Kingdom'),
       ],
     ),
   );
+  //Main Top Bar (not in use)
   final drawerer = Drawer(
     child: new ListView(
       children: <Widget>[

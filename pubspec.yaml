@@ -8,6 +8,8 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  url_launcher: ^1.0.2
+  diamond_fab: ^0.1.1
 
 dev_dependencies:
   flutter_test:
@@ -33,6 +35,10 @@ flutter:
    - images/logo_y.png
    - images/logo_y_w.png
    - images/logo.png
+   - images/connectdevelop.png
+   - images/terminal.png
+   - images/puzzle.png
+   - images/cogs.png
    #maps
    - images/yarilabs-contact-us-uk.jpg
    - images/yarilabs-contact-us.png
@@ -51,6 +57,16 @@ flutter:
    - images/tech/ruby_logo.png
    - images/tech/rubyonrails.png
    - images/tech/typescript.jpg
+   #contact_logos
+   - images/contact/github-b.png
+   - images/contact/github-bs.png
+   - images/contact/github-w.png
+   - images/contact/googleplus_b.png
+   - images/contact/googleplus_w.png
+   - images/contact/linkedin_b.png
+   - images/contact/linkedin_w.png
+   - images/contact/twitter-b.png
+   - images/contact/twitter-w.png
 
   
   # To add custom fonts to your application, add a fonts section here,
