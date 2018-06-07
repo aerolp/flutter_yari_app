@@ -22,13 +22,23 @@ class TopBar{
     title: new Text('Yarilabs')
   );
   //Secondary Top bar
-  final topbartabs = AppBar(
+  final topbarContactTabs = AppBar(
     backgroundColor: Color(0xFFFFA000),
-    title: new Text('Yarilabs'),
+    title: new Text('Contacts'),
     bottom: new TabBar(
       tabs: [
         new Container(child: new Tab(text: 'Portugal')),
         new Tab(text: 'United Kingdom'),
+      ],
+    ),
+  );
+  final topbarLanguagesTabs = AppBar(
+    backgroundColor: Color(0xFFFFA000),
+    title: new Text('Our Technology stack'),
+    bottom: new TabBar(
+      tabs: [
+        new Container(child: new Tab(text: 'Programming Languages')),
+        new Tab(text: 'Web / mobile frameworks'),
       ],
     ),
   );

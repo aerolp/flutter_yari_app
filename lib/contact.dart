@@ -171,7 +171,7 @@ class Contact extends StatelessWidget{
     return new DefaultTabController(
       length: 3,
       child: new Scaffold(
-        appBar: TopBar(context).topbartabs,
+        appBar: TopBar(context).topbarContactTabs,
         body: new TabBarView(
           children: <Widget>[
             _portugal,
