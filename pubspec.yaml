@@ -45,7 +45,7 @@ flutter:
    - images/yarilabs-contact-us.png
    #tech_logos
    - images/tech/androidsdk.png
-   - images/tech/angular2.jpg
+   - images/tech/angular2.png
    - images/tech/clojure.png
    - images/tech/elixir.png
    - images/tech/elm.png

@@ -49,13 +49,13 @@ class _YariAppState extends State<YariApp>{
                       trailing: new Icon(Icons.arrow_forward),
                       onTap: () => Navigator.of(context).push(
                         new MaterialPageRoute(builder: (BuildContext context)
-                        =>new Software())),
+                        =>new Company())),
                       ),
           new ListTile(title: new Text('Softwares'), 
                       trailing: new Icon(Icons.arrow_forward),
                       onTap: () => Navigator.of(context).push(
                         new MaterialPageRoute(builder: (BuildContext context)
-                        =>new Company())),
+                        =>new Software())),
                       ),
           new ListTile(title: new Text('Contact'), 
                       trailing: new Icon(Icons.arrow_forward),
@@ -236,7 +236,7 @@ class _YariAppState extends State<YariApp>{
       splashColor: Colors.black45,
       onPressed: () => Navigator.of(context).push(
                         new MaterialPageRoute(builder: (BuildContext context)
-                        =>new Company())),
+                        =>new Software())),
       );
     final _body = new Container(  
       color: Colors.grey[100],      
