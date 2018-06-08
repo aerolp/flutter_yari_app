@@ -28,7 +28,7 @@ class TopBar{
     bottom: new TabBar(
       tabs: [
         new Container(child: new Tab(text: 'Portugal')),
-        new Tab(text: 'United Kingdom'),
+        new Tab(text: 'United Kingdom'), 
       ],
     ),
   );
